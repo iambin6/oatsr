@@ -38,10 +38,9 @@ int main() {
         case 3: {
             char s[101];
             printf("Nhap vao chuoi: ");
-            getchar(); // Clear the newline character left by the previous input
+            getchar();
             fgets(s, sizeof(s), stdin);
-            s[strcspn(s, "\n")] = '\0'; // Remove newline character if present
-
+            s[strcspn(s, "\n")] = '\0';
             int count = 0;
             for (int i = 0; i < strlen(s); i++) {
                 char c = tolower(s[i]);
